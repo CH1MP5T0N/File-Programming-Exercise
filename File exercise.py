@@ -1,17 +1,17 @@
 myDict = {}
 file = open(r"C:\Users\phili\OneDrive\Documents\oof.txt", "r")
 read = file.read()
-list = []
-punc = '''!()-[]{};:'",<>./?@#$%^&*_~'''
+order = []
+punctuation = """!)(-][{};:'",<>./?@#$%^&*_~"""
 
 
 for i in read:
-    if i in punc:
+    if i in punctuation:
         read = read.replace(i, "")
 
-book = read.split()
+page = read.split()
 
-for i in book:
+for i in page:
     if i not in myDict:
         myDict[i] = 1
     else:
@@ -19,7 +19,7 @@ for i in book:
 
 for i in myDict:
     if myDict[i] == 1:
-        list.append(i)
+        order.append(i)
 
-for words in list:
-    print(words)
+for hapax in order:
+    print(hapax)
