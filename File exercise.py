@@ -17,8 +17,6 @@ for i in book:
     else:
         myDict[i] += 1
 
-
-
 for i in myDict:
     if myDict[i] == 1:
         list.append(i)
