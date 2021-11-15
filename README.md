@@ -1,2 +1,2 @@
 # File-Exercise
-Hapax legomenon of the following txt file
+File exercises, sorry I can't do the last number sir
